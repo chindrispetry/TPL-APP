@@ -1,0 +1,463 @@
+body {
+  background: white;
+  margin: 0;
+}
+#root {
+  width: auto;
+  height: 100px;
+  background: #3cb043;
+}
+.top-navigation {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: auto;
+  height: 80px;
+  left: 0px;
+  top: -2px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: #3cb043;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+.icon-english {
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+.icon-romania {
+  width: 40px;
+  height: 20px;
+  margin-right: 2px;
+}
+.top-navigation ul {
+  display: flex;
+  margin-top: 30px;
+  list-style: none;
+}
+.top-navigation ul li {
+  display: flex;
+  font-size: 1.2em;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.search-bar-and-btn {
+  display: flex;
+  width: 25%;
+  height: 28px;
+  margin-top: 25px;
+}
+.search-bar {
+  width: 80%;
+  height: 100%;
+  top: 26px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+  background: #fefefe;
+
+  margin-left: 10px;
+}
+.btn-search {
+  width: 20%;
+  height: 30px;
+  background-color: #aef359;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.under-navigation-bar {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 30px;
+  background: black;
+  color: white;
+  margin-right: 15%;
+}
+.under-navigation-bar ul {
+  padding: 5px;
+  margin-top: 0;
+  justify-content: space-around;
+}
+.btn {
+  width: auto;
+  height: 30px;
+  top: 26px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: none;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+.btn-register {
+  background-color: #aef359;
+  cursor: pointer;
+}
+.logo {
+  width: 120px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  color: wheat;
+  background: white;
+}
+.language {
+  width: 47px;
+  height: 30px;
+  top: 26px;
+  right: 5px;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  background: #0c0c0c;
+}
+
+.galerie-foto {
+  width: auto;
+  height: 400px;
+  top: 75px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: url(tpl.jpg);
+}
+.galerie-foto img {
+  width: 100%;
+  height: 100%;
+}
+.login-register {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: auto;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.login h2 {
+  text-align: center;
+}
+.login input,
+select {
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.login a {
+  color: #079c31;
+}
+.login p {
+  margin: 0;
+}
+.login button {
+  height: 50px;
+  margin-top: 10px;
+  background: #aef359;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+.register {
+  width: 40%;
+  height: 500px;
+}
+.news {
+  width: 45%;
+  height: 260px;
+  font-size: 1.2em;
+  text-align: left;
+}
+.news p {
+  margin: 0;
+  margin-bottom: 3px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.news h3 {
+  color: red;
+}
+.route {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  padding: 20px;
+  width: 45%;
+  height: 220px;
+}
+.route select {
+  margin-bottom: 15px;
+}
+.route button {
+  height: 50px;
+  margin-top: 10px;
+  background: #aef359;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+.bar-language {
+  width: 100%;
+  height: 20px;
+  color: white;
+  background: black;
+}
+.bar-language h5 {
+  margin-top: 0;
+  float: left;
+}
+.language {
+  display: flex;
+  height: auto;
+  margin-top: 0;
+  margin-right: 20px;
+}
+.language img {
+  cursor: pointer;
+}
+
+.bar-language-center {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.login-register-close {
+  position: absolute;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  right: 5px;
+}
+.login-register-close:hover {
+  background: red;
+}
+.last-section {
+  background: black;
+  color: white;
+  font-size: 1.2em;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.back-login-register {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.news-route {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 260px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 50px;
+}
+.btn-page {
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pagination {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+.pagination button {
+  margin-right: 3px;
+}
+.contact {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact input {
+  height: 35px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2em;
+  outline: none;
+}
+.contact button {
+  height: 50px;
+  margin-top: 10px;
+  background: #aef359;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+.contact h2 {
+  text-align: center;
+}
+.contact textarea {
+  resize: vertical;
+}
+.message-box {
+  display: none;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+.error {
+  display: block;
+  color: red;
+}
+.done {
+  display: block;
+  color: #00fd11;
+}
+.news-title {
+  width: 100%;
+  height: 155px;
+}
+.panel-admin {
+  margin-left: 15%;
+  width: 68%;
+  height: 800px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn-create-news {
+  border: none;
+  background: #aef359;
+  width: 30%;
+  height: 40px;
+  font-size: 1.2em;
+  margin-right: 10px;
+  float: right;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px black;
+}
+.btn-create-news:hover {
+  box-shadow: 1px 2px 2px 1px #0096ff;
+}
+.content {
+  padding: 10px;
+  width: 100%;
+  height: 80%;
+  margin-top: 60px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 4px 4px #aaa;
+  overflow-y: auto;
+}
+.news-template {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  background: #eee;
+  color: black;
+}
+.news-template-info {
+  width: 80%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.news-template-date {
+  font-size: 0.8em;
+}
+.news-template-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.news-template-controls {
+  display: flex;
+  font-size: 0.8em;
+  margin-top: 35px;
+}
+.news-template button {
+  cursor: pointer;
+  margin-right: 10px;
+  width: auto;
+  height: 30px;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px grey;
+}
+.news-template button:hover {
+  box-shadow: 1px 2px 2px 1px #0096ff;
+}
+.view {
+  background-color: #999999;
+}
+.update {
+  background-color: #00ff00;
+}
+.delete {
+  background-color: #ff0000;
+  color: white;
+}
+.login textarea {
+  resize: none;
+  outline: none;
+}
+.btn-stire button {
+  height: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.btn-stire button:nth-child(2) {
+  background: #0f0;
+}
+.btn-stire button:nth-child(1) {
+  background: #888;
+}
+.btn-stire {
+  position: relative;
+  right: 0;
+}
+.stire-form input {
+  outline: none;
+  text-align: left;
+  font-size: 1em;
+}
